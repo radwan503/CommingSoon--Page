@@ -1,0 +1,606 @@
+/*
+  Theme Name: Name - Comming Soon   HTML Template
+  Author: Rdawan Ahmed
+  Support: radwancse503@gmail.com
+  Description: Comming Soon  HTML5 template.
+  Version: 1.0
+*/
+
+
+/* CSS Index 
+-----------------------------------
+1.Global
+2.pre-loder section
+3.Particels bg section
+4.clock count
+5.social section
+6.Registration Modal section
+
+*/
+
+/*-----1.Global---------*/
+
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.3;
+   
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*------------2.pre-loder section---------------*/
+
+#ud_preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+#ud_preloader .ud_pre_half {
+    background-color: #00816A;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: .9;
+}
+
+#ud_preloader #ud_bg_left {
+    left: 0;
+}
+
+#ud_preloader #ud_bg_right {
+    right: 0;
+}
+
+#ud_preloader .ud_dots {
+    z-index: 10001;
+    width: 150px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ud_preloader .ud_dots p {
+    width: 100%;
+    margin: 0 0 30px 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+#ud_preloader .ud_dots .ud_dot {
+    animation: infinite 500ms ease-in-out;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 0 0;
+    color: #222;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#ud_preloader .ud_dots .ud_dot:last-child {
+    margin: 0 0 0 0;
+}
+
+@keyframes ud_preloader_1 {
+    0% {
+        background: #fff;
+        transform: translateY(0);
+        transition: 5s;
+    }
+    25% {
+        background: #000;
+        transform: translateY(-5px);
+        transition: 5s;
+    }
+    50% {
+        background: #fff;
+        transform: translateY(0);
+        transition: 5s;
+    }
+}
+
+@keyframes ud_preloader_2 {
+    25% {
+        background: #fff;
+        transform: translateY(0);
+        transition: 5s;
+    }
+    50% {
+        background: #00816A;
+        transform: translateY(-5px);
+        transition: 5s;
+    }
+    75% {
+        background: #fff;
+        transform: translateY(0);
+        transition: 5s;
+    }
+}
+
+@keyframes ud_preloader_3 {
+    50% {
+        background: #fff;
+        transform: translateY(0);
+        transition: 5s;
+    }
+    75% {
+        background: #00816A;
+        transform: translateY(-5px);
+        transition: 5s;
+    }
+    100% {
+        background: #fff;
+        transform: translateY(0);
+        transition: 5s;
+    }
+}
+
+@keyframes ud_preloader_4 {
+    75% {
+        background: #fff;
+        transform: translateY(0);
+        transition: 5s;
+    }
+    100% {
+        background: #000;
+        transform: translateY(-5px);
+        transition: 5s;
+    }
+    25% {
+        background: #fff;
+        transform: translateY(0);
+        transition: 5s;
+    }
+}
+
+
+
+/* -----3.Particels bg section--------  */
+#particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#intro {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+}
+/*Particels header*/
+.header-text {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header-text h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    line-height: 65px;
+    color: #00816A;
+    font-family: serif;
+}
+
+.header-text p {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    color: #00816A;
+    font-family: serif;
+}
+
+@media only screen and (max-width: 1000px) {
+    h4 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h4 {
+        font-size: 48px;
+    }
+    h4::after {
+        height: 8px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    #intro {
+        padding: 0 10px;
+    }
+    h4 {
+        font-size: 30px;
+    }
+    h4::after {
+        height: 6px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h4 {
+        font-size: 28px;
+    }
+    h4::after {
+        height: 4px;
+    }
+}
+/*   ------------4.clock count----- */
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#clockdiv div > span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+    font-family: fantasy;
+}
+/*--------5.social section---------*/
+
+.sticky-social {
+    left: 0;
+    position: fixed;
+    top: 150px;
+}
+
+.sticky-social a {
+    background: #333;
+    color: #fff;
+    display: block;
+    height: 35px;
+    font: 16px "Open Sans", sans-serif;
+    line-height: 35px;
+    position: relative;
+    text-align: center;
+    width: 35px;
+}
+
+.sticky-social a span {
+    line-height: 35px;
+    left: -120px;
+    position: absolute;
+    text-align: center;
+    width: 120px;
+}
+
+.sticky-social a:hover span {
+    left: 100%;
+}
+
+.sticky-social a[class*="facebook"],
+.sticky-social a[class*="facebook"]:hover,
+.sticky-social a[class*="facebook"] span {
+    background: #3b5998;
+}
+
+.sticky-social a[class*="twitter"],
+.sticky-social a[class*="twitter"]:hover,
+.sticky-social a[class*="twitter"] span {
+    background: #00aced;
+}
+
+.sticky-social a[class*="gplus"],
+.sticky-social a[class*="gplus"]:hover,
+.sticky-social a[class*="gplus"] span {
+    background: #dd4b39;
+}
+
+.sticky-social a[class*="linkedin"],
+.sticky-social a[class*="linkedin"]:hover,
+.sticky-social a[class*="linkedin"] span {
+    background: #007bb6;
+}
+
+.sticky-social a[class*="instagrem"],
+.sticky-social a[class*="instagrem"]:hover,
+.sticky-social a[class*="instagrem"] span {
+    background: #517fa4;
+}
+
+.sticky-social a[class*="stumbleupon"],
+.sticky-social a[class*="stumbleupon"]:hover,
+.sticky-social a[class*="stumbleupon"] span {
+    background: #eb4924;
+}
+
+.sticky-social a[class*="pinterest"],
+.sticky-social a[class*="pinterest"]:hover,
+.sticky-social a[class*="pinterest"] span {
+    background: #cc2127;
+}
+
+.sticky-social a[class*="flickr"],
+.sticky-social a[class*="flickr"]:hover,
+.sticky-social a[class*="flickr"] span {
+    background: #ff0084;
+}
+
+.sticky-social a[class*="tumblr"],
+.sticky-social a[class*="tumblr"]:hover,
+.sticky-social a[class*="tumblr"] span {
+    background: #32506d;
+}
+.btn-primary {
+    color: #fff;
+    background-color: green;
+    border-color: #007bff;
+}
+
+/*-----6.Registration Modal section-------- */
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+    color: #222;
+}
+.font-weight-bold {
+    font-weight: 700!important;
+    color: #222;
+}
+#login-modal .modal-dialog {
+    width: 350px;
+}
+
+#login-modal input[type=text],
+input[type=password] {
+    margin-top: 10px;
+}
+
+#div-login-msg,
+#div-lost-msg,
+#div-register-msg {
+    border: 1px solid #dadfe1;
+    height: 30px;
+    line-height: 28px;
+    transition: all ease-in-out 500ms;
+}
+
+#div-login-msg.success,
+#div-lost-msg.success,
+#div-register-msg.success {
+    border: 1px solid #68c3a3;
+    background-color: #c8f7c5;
+}
+
+#div-login-msg.error,
+#div-lost-msg.error,
+#div-register-msg.error {
+    border: 1px solid #eb575b;
+    background-color: #ffcad1;
+}
+
+#icon-login-msg,
+#icon-lost-msg,
+#icon-register-msg {
+    width: 30px;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+    background-color: #dadfe1;
+    margin-right: 5px;
+    transition: all ease-in-out 500ms;
+}
+
+#icon-login-msg.success,
+#icon-lost-msg.success,
+#icon-register-msg.success {
+    background-color: #68c3a3 !important;
+}
+
+#icon-login-msg.error,
+#icon-lost-msg.error,
+#icon-register-msg.error {
+    background-color: #eb575b !important;
+}
+
+#img_logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .8;
+}
+
+.modal-content {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    outline: 0;
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px 15px 15px 15px;
+    border-bottom: 0px;
+}
+
+.sidebar-nav i {
+    margin-right: 10px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 5px 15px 5px 15px;
+}
+
+.modal-footer {
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    border-top: 0px;
+}
+
+.checkbox {
+    margin-bottom: 0px;
+}
+
+

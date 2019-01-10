@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Comming Soon Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i,900" rel="stylesheet">
+    <!--script .js for particels-->
+    <script src="js/jquery.particleground.min.js"></script>
+    <script src="js/demo.js"></script>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        
+   <!-- ====== Loader======  -->
+    <div id="ud_preloader">
+        <div class="ud_dots">
+            <div class="ud_dot" style="animation-name: ud_preloader_1;">L</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_2;">O</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_3;">A</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_4;">D</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_1;">I</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_2;">N</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_3;">G</div>
+            <div class="ud_dot" style="animation-name: ud_preloader_4;"><i class="fas fa-dot-circle"></i></div>
+            <div class="ud_dot" style="animation-name: ud_preloader_1;"><i class="fas fa-dot-circle"></i></div>
+        </div>
+        
+        <div id="ud_bg_left" class="ud_pre_half"></div>
+        <div id="ud_bg_right" class="ud_pre_half"></div>
+    </div>
+   
+    <!-- ========== Particels bg ===========  -->
+    <section id="particles">
+        <div id="intro">
+            <div class="comming-soon">
+                <div class="header-text">
+                    <h4>COMING SOON</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptates a explicabo dolore repellat ut nam voluptatum animi, aspernatur fuga.</p>
+                </div>
+    <!-- ========= clock count ======== -->
+                <div id="clockdiv">
+                    <div> <span class="days"></span>
+                        <div class="smalltext">Days</div>
+                    </div>
+                    <div> <span class="hours"></span>
+                        <div class="smalltext">Hours</div>
+                    </div>
+                    <div> <span class="minutes"></span>
+                        <div class="smalltext">Minutes</div>
+                    </div>
+                    <div> <span class="seconds"></span>
+                        <div class="smalltext">Seconds</div>
+                    </div>
+                </div>
+    <!-- =========== Registration button ============= -->
+                <div class="notify">
+                    <div class="text-center"> <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Registrtion</a> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== Social Sidebar ========  -->
+    <div class="social-sidebar">
+        <aside class="sticky-social">
+            <ul>
+                <li><a href="#" class="entypo-facebook" target="_blank"><i class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
+                <li><a href="#" class="entypo-twitter" target="_blank"><i class="fab fa-twitter-square"></i><span>Twitter</span></a></li>
+                <li><a href="#" class="entypo-gplus" target="_blank"><i class="fab fa-google-plus-square"></i><span>Google+</span></a></li>
+                <li><a href="#" class="entypo-linkedin" target="_blank"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a></li>
+                <li><a href="#" class="entypo-instagrem" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+                <li><a href="#" class="entypo-pinterest" target="_blank"><i class="fab fa-pinterest-square"></i><span>Pinterest</span></a></li>
+            
+            </ul>
+        </aside>
+    </div>
+    <!-- ======== Registration Modal ==========  -->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                    <!-- ====== Registration Name ==========  -->
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5"> <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="email" id="defaultForm-email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+                    </div>
+                        <!-- ====== Registration Name ========  -->
+                    <div class="md-form mb-4"> <i class="fa fa-user prefix grey-text"></i>
+                        <input type="text" id="defaultForm-pass" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass">Your Name</label>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-default">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
