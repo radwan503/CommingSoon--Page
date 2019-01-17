@@ -1,8 +1,10 @@
 
 Live Demo:https://radwan503.github.io/comming-soon/
-
+behance:https://www.behance.net/gallery/75015679/Coming-Soon-Template
+youtube:https://youtu.be/jkNjCwQOZPE
 
 This is Cross Browser,high quality and full HTML5 Comming Soon template.It is build With latest Bootstrap 4,HTML5,CSS3 Technoliges. 
+comming-soon looks perfectly on a variety of mobile, tablet and desktop devices. In this template you can use videos, images, shadow and particles jquery effect as a background animation. 
 =========== KEY FEATURE ==============
 Clean & Modern Design.
 HTML5 & CSS3,JQuery.
