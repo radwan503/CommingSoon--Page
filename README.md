@@ -1,10 +1,10 @@
 #Introduction
-Comming soon template for any constructing website
+>Comming soon template for any constructing website
 
 
 #FEATURE
-Clean & Modern Design.
-HTML5 & CSS3,JQuery.
-Cross Browser Compatible.
-Font Awesome 5
+Clean & Modern Design.<br>
+HTML5 & CSS3.<br>
+Cross Browser Compatible.<br>
+Font Awesome 5<br>
 
